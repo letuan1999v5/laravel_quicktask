@@ -17,8 +17,3 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Route::get('user/{id}', function ($id){
-//    echo "Id cua user la: " .$id;
-//})->name('user.details');
-//$url = route('users.detail', ['id' => 10]);
-
