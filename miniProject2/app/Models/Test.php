@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Test extends Model
 {
-//    protected $table ='my_tests';
-public $timestamps = false;
+    public $timestamps = false;
 }
 
