@@ -6,6 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Task extends Model
 {
-    public $timestamps = false;
-    protected $fillable = ['id', 'name'];
+//    public $timestamps = false;
+//    protected $fillable = ['id', 'name'];
 }
