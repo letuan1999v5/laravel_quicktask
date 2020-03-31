@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::group(['middleware' => ['web']], function () {
+
+    Route::get('/', 'Task_controller@showTask');
+
+    Route::post('/task', 'Task_controller@addTask');
+
+    Route::delete('/task/{id}', 'Task_controller@deleteTask');
 });
